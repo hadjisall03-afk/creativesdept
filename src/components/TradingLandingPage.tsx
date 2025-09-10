@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-const bookCover = "/lovable-uploads/711aef28-d7d7-4218-8e69-977a942c1811.png";
+const bookCover = "/lovable-uploads/f3bb04be-422f-42e9-8645-ca6bf4a75fa2.png";
 
 const TradingLandingPage = () => {
   const [email, setEmail] = useState("");
@@ -70,7 +70,7 @@ const TradingLandingPage = () => {
               >
                 <img
                   src={bookCover}
-                  alt="Motivational Quote - Don't let people steal your joy, be happy"
+                  alt="#1 Free Indicator Book - Tells You When to Buy by Scott Redler"
                   className="w-48 h-64 object-cover rounded-lg transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
