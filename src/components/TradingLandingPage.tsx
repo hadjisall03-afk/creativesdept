@@ -38,10 +38,13 @@ const TradingLandingPage = () => {
       className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gray-50"
       style={{
         backgroundImage: `
-          linear-gradient(90deg, rgba(226, 232, 240, 0.3) 1px, transparent 1px),
-          linear-gradient(rgba(226, 232, 240, 0.3) 1px, transparent 1px)
+          radial-gradient(circle at 1px 1px, rgba(71, 85, 105, 0.15) 1px, transparent 0),
+          linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+          linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+          radial-gradient(circle at 50% 50%, rgba(226, 232, 240, 0.8) 0%, rgba(241, 245, 249, 0.4) 100%)
         `,
-        backgroundSize: '50px 50px'
+        backgroundSize: '20px 20px, 60px 60px, 60px 60px, 100% 100%',
+        backgroundPosition: '0 0, 0 0, 0 0, 0 0'
       }}
     >
       {/* Animated background elements */}
