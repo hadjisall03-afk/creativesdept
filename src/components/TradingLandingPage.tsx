@@ -35,15 +35,19 @@ const TradingLandingPage = () => {
 
   return (
     <div 
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gray-50"
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
       style={{
+        background: '#fafafa',
         backgroundImage: `
-          radial-gradient(circle at 1px 1px, rgba(71, 85, 105, 0.15) 1px, transparent 0),
-          linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
-          linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px)
+          radial-gradient(circle at 25px 25px, rgba(0,0,0,0.02) 2px, transparent 2px),
+          radial-gradient(circle at 75px 75px, rgba(0,0,0,0.015) 1px, transparent 1px),
+          linear-gradient(45deg, transparent 24%, rgba(0,0,0,0.005) 25%, rgba(0,0,0,0.005) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.005) 75%, rgba(0,0,0,0.005) 76%, transparent 77%),
+          linear-gradient(-45deg, transparent 24%, rgba(0,0,0,0.008) 25%, rgba(0,0,0,0.008) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.008) 75%, rgba(0,0,0,0.008) 76%, transparent 77%),
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px),
+          repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px)
         `,
-        backgroundSize: '20px 20px, 60px 60px, 60px 60px',
-        backgroundPosition: '0 0, 0 0, 0 0'
+        backgroundSize: '50px 50px, 100px 100px, 25px 25px, 25px 25px, 4px 4px, 4px 4px',
+        boxShadow: 'inset 0 0 100px rgba(0,0,0,0.02)'
       }}
     >
       {/* Animated background elements */}
