@@ -35,7 +35,11 @@ const ThankYouOTO = () => {
             Hey! If you are interested in learning more about a free trial to see update alerts minute to minute stocks that fit this criteria -
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8">
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8"
+              onClick={() => window.open('https://secure.chaikinanalytics.com/?cid=MKT846562&eid=MKT847536&assetId=AST377293&page=3', '_blank')}
+            >
               Visit Offer
             </Button>
             <Button variant="outline" size="lg">
