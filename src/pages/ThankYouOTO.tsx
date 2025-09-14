@@ -27,7 +27,7 @@ const ThankYouOTO = () => {
           <img 
             src="/lovable-uploads/chaikin-logo-final.png" 
             alt="Chaikin Analytics Logo" 
-            className="w-64 h-64 object-contain"
+            className="w-32 h-32 object-contain"
           />
         </div>
 
