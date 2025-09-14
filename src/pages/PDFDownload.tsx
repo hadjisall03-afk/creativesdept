@@ -89,7 +89,7 @@ const PDFDownload = () => {
               {/* Bonus Section */}
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 space-y-3">
                 <h3 className="text-xl font-bold text-slate-900 text-center">Special Bonus Consultation Call Included</h3>
-                <p className="text-slate-700 text-center">If you have questions about our 7 day free trial call now (888) 261-2693</p>
+                <p className="text-slate-700 text-center">If you have questions about our 7 day free trial call now <a href="tel:+18882612693" className="text-blue-600 hover:text-blue-800 underline font-semibold">(888) 261-2693</a></p>
               </div>
             </div>
           </CardContent>
