@@ -140,7 +140,11 @@ const ThankYouOTO = () => {
 
               {/* CTA Button */}
               <div className="text-center">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-12 py-4 text-xl font-bold">
+                <Button 
+                  size="lg" 
+                  className="bg-green-600 hover:bg-green-700 text-white px-12 py-4 text-xl font-bold"
+                  onClick={() => window.open('https://secure.chaikinanalytics.com/?cid=MKT846562&eid=MKT847536&assetId=AST377293&page=3', '_blank')}
+                >
                   👉 Start My 7-Day Free Trial Now
                 </Button>
               </div>
