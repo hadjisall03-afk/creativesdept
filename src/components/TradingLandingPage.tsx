@@ -35,10 +35,13 @@ const TradingLandingPage = () => {
 
   return (
     <div 
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gray-50"
       style={{
-        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-        backgroundAttachment: 'fixed'
+        backgroundImage: `
+          linear-gradient(90deg, rgba(226, 232, 240, 0.3) 1px, transparent 1px),
+          linear-gradient(rgba(226, 232, 240, 0.3) 1px, transparent 1px)
+        `,
+        backgroundSize: '50px 50px'
       }}
     >
       {/* Animated background elements */}
