@@ -65,8 +65,8 @@ const TradingLandingPage = () => {
           <div className="space-y-6 animate-bounce-in">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/new-m-logo.png" 
-                alt="M Logo" 
+                src="/lovable-uploads/new-logo.png" 
+                alt="Logo" 
                 className="w-16 h-16 object-contain"
               />
             </div>
@@ -210,7 +210,7 @@ const TradingLandingPage = () => {
                   background: 'var(--gradient-success)',
                   boxShadow: 'var(--shadow-accent)',
                   transition: 'var(--transition-spring)',
-                  color: 'white'
+                  color: 'black'
                 }}
                 disabled={!email || !consent}
               >
@@ -323,7 +323,7 @@ const TradingLandingPage = () => {
                   background: 'var(--gradient-accent)',
                   boxShadow: 'var(--shadow-glow)',
                   transition: 'var(--transition-spring)',
-                  color: 'white'
+                  color: 'black'
                 }}
               >
                 <Trophy className="w-6 h-6 mr-3" />

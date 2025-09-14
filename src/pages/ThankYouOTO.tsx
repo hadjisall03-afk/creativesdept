@@ -22,6 +22,15 @@ const ThankYouOTO = () => {
       }}
     >
       <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Logo */}
+        <div className="flex justify-center mb-6">
+          <img 
+            src="/lovable-uploads/new-logo.png" 
+            alt="Logo" 
+            className="w-16 h-16 object-contain"
+          />
+        </div>
+
         {/* Success Icon */}
         <div className="flex justify-center mb-6">
           <CheckCircle className="w-20 h-20 text-green-600" />

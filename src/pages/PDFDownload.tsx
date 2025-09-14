@@ -21,6 +21,15 @@ const PDFDownload = () => {
     boxShadow: 'inset 0 0 100px rgba(0,0,0,0.02)'
   }}>
       <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Logo */}
+        <div className="flex justify-center mb-6">
+          <img 
+            src="/lovable-uploads/new-logo.png" 
+            alt="Logo" 
+            className="w-16 h-16 object-contain"
+          />
+        </div>
+
         {/* Back Button */}
         <div className="flex justify-start mb-6">
           <Link to="/thank-you-oto">
