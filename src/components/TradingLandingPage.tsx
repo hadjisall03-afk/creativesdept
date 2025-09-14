@@ -35,13 +35,10 @@ const TradingLandingPage = () => {
 
   return (
     <div 
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-slate-900"
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
       style={{
-        backgroundImage: `
-          radial-gradient(circle at 20% 80%, hsl(217 91% 60% / 0.15) 0%, transparent 50%),
-          radial-gradient(circle at 80% 20%, hsl(43 96% 56% / 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.1) 0%, transparent 50%)
-        `
+        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+        backgroundAttachment: 'fixed'
       }}
     >
       {/* Animated background elements */}
@@ -57,8 +54,12 @@ const TradingLandingPage = () => {
           {/* Main Headline with dramatic effect */}
           <div className="space-y-6 animate-bounce-in">
             <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-r from-accent via-success to-primary p-3 rounded-full animate-pulse-glow">
-                <Trophy className="w-8 h-8 text-white" />
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20">
+                <img 
+                  src="/lovable-uploads/marketwise-logo.png" 
+                  alt="MarketWise Logo" 
+                  className="w-12 h-12 object-contain"
+                />
               </div>
             </div>
             
