@@ -22,7 +22,7 @@ const PDFDownload = () => {
   }}>
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Logo */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-2.5">
           <img 
             src="/lovable-uploads/final-logo.png" 
             alt="Chaikin Analytics Logo" 
