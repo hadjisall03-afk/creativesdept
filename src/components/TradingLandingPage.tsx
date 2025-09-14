@@ -40,11 +40,10 @@ const TradingLandingPage = () => {
         backgroundImage: `
           radial-gradient(circle at 1px 1px, rgba(71, 85, 105, 0.15) 1px, transparent 0),
           linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
-          linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
-          radial-gradient(circle at 50% 50%, rgba(226, 232, 240, 0.8) 0%, rgba(241, 245, 249, 0.4) 100%)
+          linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px)
         `,
-        backgroundSize: '20px 20px, 60px 60px, 60px 60px, 100% 100%',
-        backgroundPosition: '0 0, 0 0, 0 0, 0 0'
+        backgroundSize: '20px 20px, 60px 60px, 60px 60px',
+        backgroundPosition: '0 0, 0 0, 0 0'
       }}
     >
       {/* Animated background elements */}
@@ -68,7 +67,7 @@ const TradingLandingPage = () => {
             </div>
             
             <h1 className="text-3xl sm:text-4xl font-black leading-tight text-slate-900 drop-shadow-sm">
-              <span className="bg-gradient-to-r from-accent via-success to-primary bg-clip-text text-transparent animate-gradient-shift bg-size-200">
+              <span className="text-slate-900 font-extrabold">
                 7 NFL Stocks
               </span>
               <br />
