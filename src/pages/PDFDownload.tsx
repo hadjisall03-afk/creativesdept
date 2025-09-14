@@ -4,13 +4,8 @@ import { Download, FileText, CheckCircle, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 const PDFDownload = () => {
   const handleDownload = () => {
-    // Create a temporary download link for the PDF
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/nfl-stocks-book-cover.png'; // Placeholder until actual PDF is provided
-    link.download = 'nfl-stocks-guide.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open Google Drive folder in new tab
+    window.open('https://drive.google.com/drive/folders/1c0VC4erTeNe7dgbY0IDkC4X4EqJJ3hgQ?usp=drive_link', '_blank');
   };
   return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden" style={{
     background: '#fafafa',
