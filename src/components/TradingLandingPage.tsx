@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
+import { TrendingUp, DollarSign, Target, Shield, Users, Zap, CheckCircle2, Star, Trophy, BarChart3 } from "lucide-react";
+
 const bookCover = "/lovable-uploads/nfl-stocks-book-cover.png";
 
 const TradingLandingPage = () => {
@@ -32,104 +34,159 @@ const TradingLandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
+      style={{
+        background: 'var(--gradient-hero)',
+        backgroundSize: '400% 400%',
+        animation: 'gradient-shift 8s ease-in-out infinite'
+      }}
+    >
+      {/* Animated background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-accent rounded-full blur-3xl animate-pulse-glow"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-success rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
+      </div>
+
       {/* Mobile-first container */}
-      <div className="w-full max-w-sm mx-auto">
-        <div className="text-center space-y-8">
-          {/* Main Headline */}
-          <div className="space-y-4">
-            <h1 className="text-2xl font-bold leading-tight text-foreground">
-              <span className="text-accent font-extrabold">7 NFL Stocks</span>{" "}
-              Ready to Explode This Season
+      <div className="w-full max-w-lg mx-auto relative z-10">
+        <div className="text-center space-y-8 animate-fade-in">
+          
+          {/* Main Headline with dramatic effect */}
+          <div className="space-y-6 animate-bounce-in">
+            <div className="flex justify-center mb-4">
+              <div className="bg-gradient-to-r from-accent via-success to-primary p-3 rounded-full animate-pulse-glow">
+                <Trophy className="w-8 h-8 text-white" />
+              </div>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl font-black leading-tight text-white drop-shadow-2xl">
+              <span className="bg-gradient-to-r from-accent via-success to-primary bg-clip-text text-transparent animate-gradient-shift bg-size-200">
+                7 NFL Stocks
+              </span>
+              <br />
+              <span className="text-white">Ready to</span>{" "}
+              <span 
+                className="text-accent font-extrabold animate-pulse-glow"
+                style={{
+                  textShadow: '0 0 30px hsl(43 96% 56% / 0.8)'
+                }}
+              >
+                EXPLODE
+              </span>
+              <br />
+              <span className="text-white">This Season</span>
             </h1>
             
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              The NFL just kicked off — and billions of dollars are flowing through the companies powering America's #1 sport.
-            </p>
-            
-            <p className="text-muted-foreground text-xs leading-relaxed italic">
-              Get the <span className="font-semibold text-accent">free report</span> and see which stocks could surge this season.
-            </p>
+            <div className="space-y-3">
+              <p className="text-white/90 text-lg leading-relaxed font-medium">
+                The NFL just kicked off — and <strong>billions of dollars</strong> are flowing through the companies powering America's #1 sport.
+              </p>
+              
+              <div className="flex items-center justify-center space-x-2 text-accent font-bold text-sm animate-bounce">
+                <Zap className="w-4 h-4" />
+                <p>Get the free report and see which stocks could surge this season.</p>
+                <Zap className="w-4 h-4" />
+              </div>
+            </div>
           </div>
 
           {/* Hero Section - Free PDF Report Reveals */}
           <div 
-            className="bg-card rounded-2xl p-6 space-y-4"
+            className="rounded-3xl p-8 space-y-6 backdrop-blur-lg border border-white/20 animate-scale-in"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card-hover)',
+              transition: 'var(--transition-smooth)'
             }}
           >
-            <h2 className="text-lg font-bold text-center text-foreground">
-              Free PDF Report Reveals:
-            </h2>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>The <em>7 companies tied to NFL momentum</em> most investors are overlooking.</p>
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <BarChart3 className="w-6 h-6 text-accent" />
+              <h2 className="text-xl font-bold text-foreground">
+                Free PDF Report Reveals:
+              </h2>
+              <BarChart3 className="w-6 h-6 text-accent" />
+            </div>
+            
+            <div className="space-y-4 text-left">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-success/10 to-accent/10 border border-success/20 hover:shadow-lg transition-all duration-300">
+                <Target className="w-6 h-6 text-success mt-0.5 flex-shrink-0" />
+                <p className="text-foreground font-medium">The <em>7 companies tied to NFL momentum</em> most investors are overlooking.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>Why football season is one of the most profitable times of the year for these stocks.</p>
+              
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-accent/10 to-primary/10 border border-accent/20 hover:shadow-lg transition-all duration-300">
+                <TrendingUp className="w-6 h-6 text-accent mt-0.5 flex-shrink-0" />
+                <p className="text-foreground font-medium">Why football season is one of the most profitable times of the year for these stocks.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>How you can position yourself early before Wall Street piles in.</p>
+              
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-gradient-to-r from-primary/10 to-success/10 border border-primary/20 hover:shadow-lg transition-all duration-300">
+                <Zap className="w-6 h-6 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-foreground font-medium">How you can position yourself early before Wall Street piles in.</p>
               </div>
             </div>
-            <p className="text-center text-accent font-semibold text-sm">
-              👉 Enter your email below for instant access.
-            </p>
+            
+            <div className="text-center">
+              <div className="flex items-center justify-center space-x-2 text-accent font-bold text-lg animate-bounce">
+                <span>👉</span>
+                <p>Enter your email below for instant access.</p>
+                <span>👈</span>
+              </div>
+            </div>
           </div>
 
           {/* Book Cover & Form Container */}
           <div 
-            className="bg-card rounded-2xl p-6 space-y-6"
+            className="rounded-3xl p-8 space-y-8 backdrop-blur-lg border border-white/20 animate-slide-up"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card-hover)',
+              transition: 'var(--transition-smooth)'
             }}
           >
             {/* Book Cover */}
             <div className="flex justify-center">
               <div 
-                className="relative"
+                className="relative group"
                 style={{ 
                   filter: 'drop-shadow(var(--shadow-book))',
-                  transition: 'var(--transition-smooth)'
+                  transition: 'var(--transition-spring)'
                 }}
               >
                 <img
                   src={bookCover}
                   alt="7 NFL Stocks Ready to Explode This Season - Free Report"
-                  className="w-48 h-64 object-cover rounded-lg transform hover:scale-105 transition-transform duration-300"
+                  className="w-52 h-72 object-cover rounded-2xl transform group-hover:scale-110 group-hover:rotate-2 transition-all duration-500 shadow-2xl border-4 border-white/50"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
 
             {/* Email Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="relative">
                 <Input
                   type="email"
-                  placeholder="Enter Your Email"
+                  placeholder="Enter Your Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full h-12 text-center text-base rounded-xl border-2 border-muted focus:border-accent transition-colors bg-background"
+                  className="w-full h-14 text-center text-lg rounded-2xl border-2 border-accent/30 focus:border-accent bg-white/90 backdrop-blur-sm font-medium shadow-lg hover:shadow-xl transition-all duration-300"
                   required
                 />
+                <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                  <DollarSign className="w-5 h-5 text-accent" />
+                </div>
               </div>
 
-              <div className="flex items-start space-x-3 text-left">
+              <div className="flex items-start space-x-3 text-left bg-white/50 p-4 rounded-xl">
                 <Checkbox
                   id="consent"
                   checked={consent}
                   onCheckedChange={(checked) => setConsent(checked as boolean)}
-                  className="mt-0.5"
+                  className="mt-1 data-[state=checked]:bg-success data-[state=checked]:border-success"
                 />
                 <label 
                   htmlFor="consent" 
-                  className="text-xs text-muted-foreground leading-relaxed cursor-pointer"
+                  className="text-sm text-muted-foreground leading-relaxed cursor-pointer font-medium"
                 >
                   By opting in, you consent to receive content and marketing emails. Opt out at any time.
                 </label>
@@ -137,123 +194,155 @@ const TradingLandingPage = () => {
 
               <Button
                 type="submit"
-                className="w-full h-12 text-base font-semibold rounded-xl"
+                className="w-full h-16 text-lg font-bold rounded-2xl border-2 border-white/30 hover:border-white/50 transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{
-                  background: 'var(--gradient-accent)',
+                  background: 'var(--gradient-success)',
                   boxShadow: 'var(--shadow-accent)',
-                  transition: 'var(--transition-smooth)'
+                  transition: 'var(--transition-spring)',
+                  color: 'white'
                 }}
                 disabled={!email || !consent}
               >
+                <Star className="w-6 h-6 mr-3" />
                 Get My Free Report
+                <Star className="w-6 h-6 ml-3" />
               </Button>
             </form>
           </div>
 
           {/* Proof Section */}
           <div 
-            className="bg-card rounded-2xl p-6 space-y-4"
+            className="rounded-3xl p-8 space-y-6 backdrop-blur-lg border border-white/20 animate-fade-in"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card)',
+              transition: 'var(--transition-smooth)',
+              animationDelay: '0.3s'
             }}
           >
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>The Dallas Cowboys are worth over <strong>$5 billion</strong>.</p>
+            <div className="grid gap-4">
+              <div className="flex items-center space-x-4 p-4 rounded-2xl bg-gradient-to-r from-success/20 to-success/10 border border-success/30">
+                <Trophy className="w-8 h-8 text-success flex-shrink-0" />
+                <p className="text-foreground font-semibold">The Dallas Cowboys are worth over <span className="text-success font-black text-lg">$5 billion</span>.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>The NFL pulled in <strong>500 million viewers</strong> opening weekend.</p>
+              
+              <div className="flex items-center space-x-4 p-4 rounded-2xl bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30">
+                <Users className="w-8 h-8 text-primary flex-shrink-0" />
+                <p className="text-foreground font-semibold">The NFL pulled in <span className="text-primary font-black text-lg">500 million viewers</span> opening weekend.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent font-bold">•</span>
-                <p>Expansion into <strong>Brazil and global markets</strong> is unlocking brand-new sponsorship streams.</p>
+              
+              <div className="flex items-center space-x-4 p-4 rounded-2xl bg-gradient-to-r from-accent/20 to-accent/10 border border-accent/30">
+                <TrendingUp className="w-8 h-8 text-accent flex-shrink-0" />
+                <p className="text-foreground font-semibold">Expansion into <span className="text-accent font-black">Brazil and global markets</span> is unlocking brand-new sponsorship streams.</p>
               </div>
             </div>
-            <p className="text-center text-foreground font-semibold text-sm">
-              Where attention goes, money flows. These stocks are positioned to win.
-            </p>
+            
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-r from-foreground/10 to-foreground/5 border border-foreground/20">
+              <p className="text-foreground font-bold text-lg">
+                Where attention goes, money flows. These stocks are positioned to <span className="text-success">WIN</span>.
+              </p>
+            </div>
           </div>
 
           {/* What You'll Learn Section */}
           <div 
-            className="bg-card rounded-2xl p-6 space-y-4"
+            className="rounded-3xl p-8 space-y-6 backdrop-blur-lg border border-white/20 animate-scale-in"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card-hover)',
+              transition: 'var(--transition-smooth)',
+              animationDelay: '0.4s'
             }}
           >
-            <h2 className="text-lg font-bold text-center text-foreground">
-              What You'll Learn Inside the Report
-            </h2>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex items-start space-x-2">
-                <span className="text-green-500 font-bold">✅</span>
-                <p>7 NFL-linked stocks that could surge this season.</p>
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-black text-foreground mb-2">
+                What You'll Learn Inside the Report
+              </h2>
+              <div className="w-20 h-1 bg-gradient-to-r from-accent to-success mx-auto rounded-full"></div>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4 p-5 rounded-2xl bg-gradient-to-r from-success/10 to-transparent border border-success/20 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <CheckCircle2 className="w-6 h-6 text-success mt-1 flex-shrink-0" />
+                <p className="text-foreground font-semibold">7 NFL-linked stocks that could surge this season.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-green-500 font-bold">✅</span>
-                <p>How each company profits directly from football.</p>
+              
+              <div className="flex items-start space-x-4 p-5 rounded-2xl bg-gradient-to-r from-accent/10 to-transparent border border-accent/20 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <CheckCircle2 className="w-6 h-6 text-success mt-1 flex-shrink-0" />
+                <p className="text-foreground font-semibold">How each company profits directly from football.</p>
               </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-green-500 font-bold">✅</span>
-                <p>Why this "picks & shovels" play is smarter than gambling on games.</p>
+              
+              <div className="flex items-start space-x-4 p-5 rounded-2xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <CheckCircle2 className="w-6 h-6 text-success mt-1 flex-shrink-0" />
+                <p className="text-foreground font-semibold">Why this "picks & shovels" play is smarter than gambling on games.</p>
               </div>
             </div>
           </div>
 
           {/* Second Call to Action */}
           <div 
-            className="bg-card rounded-2xl p-6 space-y-4"
+            className="rounded-3xl p-8 space-y-6 backdrop-blur-lg border border-white/20 animate-bounce-in"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-accent)',
+              transition: 'var(--transition-smooth)',
+              animationDelay: '0.5s'
             }}
           >
-            <p className="text-center text-accent font-semibold text-sm">
-              👉 Don't just watch football season — own a piece of it.
-            </p>
-            <p className="text-center text-foreground text-sm">
-              Enter your email now and get <strong>instant access</strong> to <em>7 NFL Stocks Ready to Explode This Season.</em>
-            </p>
-            <Button
-              onClick={() => {
-                const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
-                emailInput?.focus();
-                emailInput?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="w-full h-12 text-base font-semibold rounded-xl"
-              style={{
-                background: 'var(--gradient-accent)',
-                boxShadow: 'var(--shadow-accent)',
-                transition: 'var(--transition-smooth)'
-              }}
-            >
-              Claim My Free Report
-            </Button>
+            <div className="text-center space-y-4">
+              <div className="flex items-center justify-center space-x-2 text-accent font-bold text-lg animate-bounce">
+                <span>👉</span>
+                <p>Don't just watch football season — own a piece of it.</p>
+                <span>👈</span>
+              </div>
+              
+              <p className="text-foreground text-lg font-semibold">
+                Enter your email now and get <span className="text-success font-black">instant access</span> to{" "}
+                <em className="text-accent font-bold">7 NFL Stocks Ready to Explode This Season.</em>
+              </p>
+              
+              <Button
+                onClick={() => {
+                  const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
+                  emailInput?.focus();
+                  emailInput?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="w-full h-16 text-lg font-bold rounded-2xl border-2 border-white/30 hover:border-white/50 transform hover:scale-105 active:scale-95"
+                style={{
+                  background: 'var(--gradient-accent)',
+                  boxShadow: 'var(--shadow-glow)',
+                  transition: 'var(--transition-spring)',
+                  color: 'white'
+                }}
+              >
+                <Trophy className="w-6 h-6 mr-3" />
+                Claim My Free Report
+                <Trophy className="w-6 h-6 ml-3" />
+              </Button>
+            </div>
           </div>
 
           {/* Reassurance Section */}
           <div 
-            className="bg-card rounded-2xl p-6"
+            className="rounded-3xl p-6 backdrop-blur-lg border border-white/20 animate-fade-in"
             style={{
               background: 'var(--gradient-card)',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card)',
+              transition: 'var(--transition-smooth)',
+              animationDelay: '0.6s'
             }}
           >
-            <div className="space-y-2 text-xs text-muted-foreground text-center">
-              <div className="flex items-center justify-center space-x-2">
-                <span className="text-green-500 font-bold">•</span>
+            <div className="grid grid-cols-1 gap-3 text-center">
+              <div className="flex items-center justify-center space-x-3 text-success font-semibold">
+                <Shield className="w-5 h-5" />
                 <p>100% Free — no credit card required.</p>
               </div>
-              <div className="flex items-center justify-center space-x-2">
-                <span className="text-green-500 font-bold">•</span>
+              <div className="flex items-center justify-center space-x-3 text-success font-semibold">
+                <CheckCircle2 className="w-5 h-5" />
                 <p>Cancel anytime.</p>
               </div>
-              <div className="flex items-center justify-center space-x-2">
-                <span className="text-green-500 font-bold">•</span>
+              <div className="flex items-center justify-center space-x-3 text-success font-semibold">
+                <Star className="w-5 h-5" />
                 <p>Keep the report no matter what.</p>
               </div>
             </div>
