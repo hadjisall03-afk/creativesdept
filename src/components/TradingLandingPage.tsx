@@ -52,6 +52,36 @@ const TradingLandingPage = () => {
             </p>
           </div>
 
+          {/* Hero Section - Free PDF Report Reveals */}
+          <div 
+            className="bg-card rounded-2xl p-6 space-y-4"
+            style={{
+              background: 'var(--gradient-card)',
+              boxShadow: 'var(--shadow-card)'
+            }}
+          >
+            <h2 className="text-lg font-bold text-center text-foreground">
+              Free PDF Report Reveals:
+            </h2>
+            <div className="space-y-3 text-sm text-muted-foreground">
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>The <em>7 companies tied to NFL momentum</em> most investors are overlooking.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>Why football season is one of the most profitable times of the year for these stocks.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>How you can position yourself early before Wall Street piles in.</p>
+              </div>
+            </div>
+            <p className="text-center text-accent font-semibold text-sm">
+              👉 Enter your email below for instant access.
+            </p>
+          </div>
+
           {/* Book Cover & Form Container */}
           <div 
             className="bg-card rounded-2xl p-6 space-y-6"
@@ -118,6 +148,115 @@ const TradingLandingPage = () => {
                 Get My Free Report
               </Button>
             </form>
+          </div>
+
+          {/* Proof Section */}
+          <div 
+            className="bg-card rounded-2xl p-6 space-y-4"
+            style={{
+              background: 'var(--gradient-card)',
+              boxShadow: 'var(--shadow-card)'
+            }}
+          >
+            <div className="space-y-3 text-sm text-muted-foreground">
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>The Dallas Cowboys are worth over <strong>$5 billion</strong>.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>The NFL pulled in <strong>500 million viewers</strong> opening weekend.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-accent font-bold">•</span>
+                <p>Expansion into <strong>Brazil and global markets</strong> is unlocking brand-new sponsorship streams.</p>
+              </div>
+            </div>
+            <p className="text-center text-foreground font-semibold text-sm">
+              Where attention goes, money flows. These stocks are positioned to win.
+            </p>
+          </div>
+
+          {/* What You'll Learn Section */}
+          <div 
+            className="bg-card rounded-2xl p-6 space-y-4"
+            style={{
+              background: 'var(--gradient-card)',
+              boxShadow: 'var(--shadow-card)'
+            }}
+          >
+            <h2 className="text-lg font-bold text-center text-foreground">
+              What You'll Learn Inside the Report
+            </h2>
+            <div className="space-y-3 text-sm text-muted-foreground">
+              <div className="flex items-start space-x-2">
+                <span className="text-green-500 font-bold">✅</span>
+                <p>7 NFL-linked stocks that could surge this season.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-green-500 font-bold">✅</span>
+                <p>How each company profits directly from football.</p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <span className="text-green-500 font-bold">✅</span>
+                <p>Why this "picks & shovels" play is smarter than gambling on games.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Call to Action */}
+          <div 
+            className="bg-card rounded-2xl p-6 space-y-4"
+            style={{
+              background: 'var(--gradient-card)',
+              boxShadow: 'var(--shadow-card)'
+            }}
+          >
+            <p className="text-center text-accent font-semibold text-sm">
+              👉 Don't just watch football season — own a piece of it.
+            </p>
+            <p className="text-center text-foreground text-sm">
+              Enter your email now and get <strong>instant access</strong> to <em>7 NFL Stocks Ready to Explode This Season.</em>
+            </p>
+            <Button
+              onClick={() => {
+                const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
+                emailInput?.focus();
+                emailInput?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="w-full h-12 text-base font-semibold rounded-xl"
+              style={{
+                background: 'var(--gradient-accent)',
+                boxShadow: 'var(--shadow-accent)',
+                transition: 'var(--transition-smooth)'
+              }}
+            >
+              Claim My Free Report
+            </Button>
+          </div>
+
+          {/* Reassurance Section */}
+          <div 
+            className="bg-card rounded-2xl p-6"
+            style={{
+              background: 'var(--gradient-card)',
+              boxShadow: 'var(--shadow-card)'
+            }}
+          >
+            <div className="space-y-2 text-xs text-muted-foreground text-center">
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-green-500 font-bold">•</span>
+                <p>100% Free — no credit card required.</p>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-green-500 font-bold">•</span>
+                <p>Cancel anytime.</p>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-green-500 font-bold">•</span>
+                <p>Keep the report no matter what.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
