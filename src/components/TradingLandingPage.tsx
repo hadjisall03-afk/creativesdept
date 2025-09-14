@@ -23,7 +23,7 @@ const TradingLandingPage = () => {
     
     toast({
       title: "Success!",
-      description: "You'll receive your free indicator guide shortly.",
+      description: "You'll receive your free NFL stocks report shortly.",
     });
     
     // Reset form
@@ -39,15 +39,16 @@ const TradingLandingPage = () => {
           {/* Main Headline */}
           <div className="space-y-4">
             <h1 className="text-2xl font-bold leading-tight text-foreground">
-              Buy the Stock When it Touches{" "}
-              <span className="text-accent font-extrabold">THIS ONE Line</span>{" "}
-              on the Chart
+              <span className="text-accent font-extrabold">7 NFL Stocks</span>{" "}
+              Ready to Explode This Season
             </h1>
             
-            <p className="text-muted-foreground text-sm leading-relaxed italic">
-              My free book shares the #1 spot to buy and the{" "}
-              <span className="font-semibold text-accent">FREE indicator</span>{" "}
-              that alerts you
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              The NFL just kicked off — and billions of dollars are flowing through the companies powering America's #1 sport.
+            </p>
+            
+            <p className="text-muted-foreground text-xs leading-relaxed italic">
+              Get the <span className="font-semibold text-accent">free report</span> and see which stocks could surge this season.
             </p>
           </div>
 
@@ -70,7 +71,7 @@ const TradingLandingPage = () => {
               >
                 <img
                   src={bookCover}
-                  alt="#1 Free Indicator Book - Tells You When to Buy by Scott Redler"
+                  alt="7 NFL Stocks Ready to Explode This Season - Free Report"
                   className="w-48 h-64 object-cover rounded-lg transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -100,7 +101,7 @@ const TradingLandingPage = () => {
                   htmlFor="consent" 
                   className="text-xs text-muted-foreground leading-relaxed cursor-pointer"
                 >
-                  By opting in, you consent to receive content and marketing emails from T3 Live. Opt out at any time.
+                  By opting in, you consent to receive content and marketing emails. Opt out at any time.
                 </label>
               </div>
 
@@ -114,7 +115,7 @@ const TradingLandingPage = () => {
                 }}
                 disabled={!email || !consent}
               >
-                Get Your Free Indicator
+                Get My Free Report
               </Button>
             </form>
           </div>
