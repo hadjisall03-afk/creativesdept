@@ -24,7 +24,7 @@ const PDFDownload = () => {
         {/* Logo */}
         <div className="flex justify-center mb-2.5">
           <img 
-            src="/lovable-uploads/final-logo.png" 
+            src="/lovable-uploads/chaikin-logo.jpeg" 
             alt="Chaikin Analytics Logo" 
             className="w-64 h-64 object-contain"
           />
