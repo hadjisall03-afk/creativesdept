@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -11,6 +12,7 @@ const TradingLandingPage = () => {
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,9 +30,8 @@ const TradingLandingPage = () => {
       description: "You'll receive your free NFL stocks report shortly.",
     });
     
-    // Reset form
-    setEmail("");
-    setConsent(false);
+    // Navigate to thank you page
+    navigate("/thank-you-oto");
   };
 
   return (
