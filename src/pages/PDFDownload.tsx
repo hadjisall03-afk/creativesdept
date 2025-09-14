@@ -4,8 +4,8 @@ import { Download, FileText, CheckCircle, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 const PDFDownload = () => {
   const handleDownload = () => {
-    // Open Google Drive folder in new tab
-    window.open('https://drive.google.com/drive/folders/1c0VC4erTeNe7dgbY0IDkC4X4EqJJ3hgQ?usp=drive_link', '_blank');
+    // Open Google Drive file in new tab
+    window.open('https://drive.google.com/file/d/1cjt-M8h89y2fMRbrArjuKA73XRjTuYiU/view?usp=sharing', '_blank');
   };
   return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden" style={{
     background: '#fafafa',
