@@ -56,14 +56,12 @@ const TradingLandingPage = () => {
           
           {/* Main Headline with dramatic effect */}
           <div className="space-y-6 animate-bounce-in">
-            <div className="flex justify-center mb-4">
-              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-full border border-slate-200/50 shadow-lg">
-                <img 
-                  src="/lovable-uploads/m-logo.png" 
-                  alt="M Logo" 
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/m-logo.png" 
+                alt="M Logo" 
+                className="w-16 h-16 object-contain"
+              />
             </div>
             
             <h1 className="text-3xl sm:text-4xl font-black leading-tight text-slate-900 drop-shadow-sm">
