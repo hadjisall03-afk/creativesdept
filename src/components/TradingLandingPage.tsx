@@ -64,7 +64,7 @@ const TradingLandingPage = () => {
           <div className="space-y-6 animate-bounce-in">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/m-logo.png" 
+                src="/lovable-uploads/new-m-logo.png" 
                 alt="M Logo" 
                 className="w-16 h-16 object-contain"
               />
