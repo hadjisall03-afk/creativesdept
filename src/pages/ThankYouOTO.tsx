@@ -23,11 +23,11 @@ const ThankYouOTO = () => {
     >
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Logo */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-8">
           <img 
             src="/lovable-uploads/final-logo.png" 
             alt="Chaikin Analytics Logo" 
-            className="w-32 h-32 object-contain"
+            className="w-64 h-64 object-contain"
           />
         </div>
 

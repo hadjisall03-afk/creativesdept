@@ -63,11 +63,11 @@ const TradingLandingPage = () => {
           
           {/* Main Headline with dramatic effect */}
           <div className="space-y-6 animate-bounce-in">
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-8">
               <img 
                 src="/lovable-uploads/final-logo.png" 
                 alt="Chaikin Analytics Logo" 
-                className="w-32 h-32 object-contain"
+                className="w-64 h-64 object-contain"
               />
             </div>
             
