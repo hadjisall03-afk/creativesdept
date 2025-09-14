@@ -57,7 +57,7 @@ const TradingLandingPage = () => {
           {/* Main Headline with dramatic effect */}
           <div className="space-y-6 animate-bounce-in">
             <div className="flex justify-center mb-4">
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20">
+              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-full border border-slate-200/50 shadow-lg">
                 <img 
                   src="/lovable-uploads/marketwise-logo.png" 
                   alt="MarketWise Logo" 
@@ -66,27 +66,27 @@ const TradingLandingPage = () => {
               </div>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl font-black leading-tight text-white drop-shadow-2xl">
+            <h1 className="text-3xl sm:text-4xl font-black leading-tight text-slate-900 drop-shadow-sm">
               <span className="bg-gradient-to-r from-accent via-success to-primary bg-clip-text text-transparent animate-gradient-shift bg-size-200">
                 7 NFL Stocks
               </span>
               <br />
-              <span className="text-white">Ready to</span>{" "}
+              <span className="text-slate-900">Ready to</span>{" "}
               <span 
-                className="text-accent font-extrabold animate-pulse-glow"
+                className="text-accent font-extrabold"
                 style={{
-                  textShadow: '0 0 30px hsl(43 96% 56% / 0.8)'
+                  textShadow: '0 0 20px hsl(43 96% 56% / 0.3)'
                 }}
               >
                 EXPLODE
               </span>
               <br />
-              <span className="text-white">This Season</span>
+              <span className="text-slate-900">This Season</span>
             </h1>
             
             <div className="space-y-3">
-              <p className="text-white/90 text-lg leading-relaxed font-medium">
-                The NFL just kicked off — and <strong>billions of dollars</strong> are flowing through the companies powering America's #1 sport.
+              <p className="text-slate-700 text-lg leading-relaxed font-medium">
+                The NFL just kicked off — and <strong className="text-slate-900">billions of dollars</strong> are flowing through the companies powering America's #1 sport.
               </p>
               
               <div className="flex items-center justify-center space-x-2 text-accent font-bold text-sm animate-bounce">
@@ -296,13 +296,13 @@ const TradingLandingPage = () => {
             }}
           >
             <div className="text-center space-y-4">
-              <div className="flex items-center justify-center space-x-2 text-accent font-bold text-lg animate-bounce">
+              <div className="flex items-center justify-center space-x-2 text-accent font-bold text-lg">
                 <span>👉</span>
                 <p>Don't just watch football season — own a piece of it.</p>
                 <span>👈</span>
               </div>
               
-              <p className="text-foreground text-lg font-semibold">
+              <p className="text-slate-800 text-lg font-semibold">
                 Enter your email now and get <span className="text-success font-black">instant access</span> to{" "}
                 <em className="text-accent font-bold">7 NFL Stocks Ready to Explode This Season.</em>
               </p>
