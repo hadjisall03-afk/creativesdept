@@ -104,7 +104,7 @@ const PDFDownload = () => {
               {/* Bonus Section */}
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 space-y-3">
                 <h3 className="text-xl font-bold text-slate-900 text-center">
-                  Bonus Content Included
+                  Hidden Bonus Consultation Call Included
                 </h3>
                 <p className="text-slate-700 text-center">
                   Get exclusive access to our "Championship Stock Checklist" - a simple framework for evaluating NFL-related investment opportunities.
