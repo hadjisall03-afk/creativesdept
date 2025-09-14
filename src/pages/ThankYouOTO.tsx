@@ -25,9 +25,9 @@ const ThankYouOTO = () => {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <img 
-            src="/lovable-uploads/new-logo-black.png" 
-            alt="Logo" 
-            className="w-24 h-24 object-contain"
+            src="/lovable-uploads/final-logo.png" 
+            alt="Chaikin Analytics Logo" 
+            className="w-32 h-32 object-contain"
           />
         </div>
 
