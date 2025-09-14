@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Clock, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ThankYouOTO = () => {
   return (
@@ -42,9 +43,11 @@ const ThankYouOTO = () => {
             >
               Visit Offer
             </Button>
-            <Button variant="outline" size="lg">
-              Take me To PDF
-            </Button>
+            <Link to="/pdf-download">
+              <Button variant="outline" size="lg">
+                Take me To PDF
+              </Button>
+            </Link>
           </div>
         </div>
 
