@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-const bookCover = "/lovable-uploads/f3bb04be-422f-42e9-8645-ca6bf4a75fa2.png";
+const bookCover = "/lovable-uploads/nfl-stocks-book-cover.png";
 
 const TradingLandingPage = () => {
   const [email, setEmail] = useState("");
