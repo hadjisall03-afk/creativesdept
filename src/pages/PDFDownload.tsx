@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Download, FileText, CheckCircle, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const PDFDownload = () => {
   const handleDownload = () => {
     // Create a temporary download link for the PDF
@@ -13,13 +12,9 @@ const PDFDownload = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  return (
-    <div 
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
-      style={{
-        background: '#fafafa',
-        backgroundImage: `
+  return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden" style={{
+    background: '#fafafa',
+    backgroundImage: `
           radial-gradient(circle at 25px 25px, rgba(0,0,0,0.02) 2px, transparent 2px),
           radial-gradient(circle at 75px 75px, rgba(0,0,0,0.015) 1px, transparent 1px),
           linear-gradient(45deg, transparent 24%, rgba(0,0,0,0.005) 25%, rgba(0,0,0,0.005) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.005) 75%, rgba(0,0,0,0.005) 76%, transparent 77%),
@@ -27,10 +22,9 @@ const PDFDownload = () => {
           repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px),
           repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px)
         `,
-        backgroundSize: '50px 50px, 100px 100px, 25px 25px, 25px 25px, 4px 4px, 4px 4px',
-        boxShadow: 'inset 0 0 100px rgba(0,0,0,0.02)'
-      }}
-    >
+    backgroundSize: '50px 50px, 100px 100px, 25px 25px, 25px 25px, 4px 4px, 4px 4px',
+    boxShadow: 'inset 0 0 100px rgba(0,0,0,0.02)'
+  }}>
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Back Button */}
         <div className="flex justify-start mb-6">
@@ -88,11 +82,7 @@ const PDFDownload = () => {
 
               {/* Download Button */}
               <div className="text-center space-y-4">
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-xl font-bold"
-                  onClick={handleDownload}
-                >
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-xl font-bold" onClick={handleDownload}>
                   <Download className="w-6 h-6 mr-2" />
                   Download PDF Now
                 </Button>
@@ -103,12 +93,8 @@ const PDFDownload = () => {
 
               {/* Bonus Section */}
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 space-y-3">
-                <h3 className="text-xl font-bold text-slate-900 text-center">
-                  Hidden Bonus Consultation Call Included
-                </h3>
-                <p className="text-slate-700 text-center">
-                  Get exclusive access to our "Championship Stock Checklist" - a simple framework for evaluating NFL-related investment opportunities.
-                </p>
+                <h3 className="text-xl font-bold text-slate-900 text-center">Special Bonus Consultation Call Included</h3>
+                <p className="text-slate-700 text-center">If you have any questions about our 7 days trail Call Now (888) 261-2693</p>
               </div>
             </div>
           </CardContent>
@@ -131,8 +117,6 @@ const PDFDownload = () => {
           <p>Questions? Contact our support team at support@nflstocks.com</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default PDFDownload;
