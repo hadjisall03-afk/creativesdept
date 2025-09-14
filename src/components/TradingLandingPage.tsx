@@ -59,8 +59,8 @@ const TradingLandingPage = () => {
             <div className="flex justify-center mb-4">
               <div className="bg-white/80 backdrop-blur-sm p-4 rounded-full border border-slate-200/50 shadow-lg">
                 <img 
-                  src="/lovable-uploads/marketwise-logo.png" 
-                  alt="MarketWise Logo" 
+                  src="/lovable-uploads/m-logo.png" 
+                  alt="M Logo" 
                   className="w-12 h-12 object-contain"
                 />
               </div>
