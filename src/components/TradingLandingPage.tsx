@@ -35,11 +35,13 @@ const TradingLandingPage = () => {
 
   return (
     <div 
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-slate-900"
       style={{
-        background: 'var(--gradient-hero)',
-        backgroundSize: '400% 400%',
-        animation: 'gradient-shift 8s ease-in-out infinite'
+        backgroundImage: `
+          radial-gradient(circle at 20% 80%, hsl(217 91% 60% / 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, hsl(43 96% 56% / 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.1) 0%, transparent 50%)
+        `
       }}
     >
       {/* Animated background elements */}
