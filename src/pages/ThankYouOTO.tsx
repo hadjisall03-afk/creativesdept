@@ -78,6 +78,20 @@ const ThankYouOTO = () => {
                 <p className="text-lg text-slate-700 max-w-3xl mx-auto">
                   That means more stocks are moving, and if you wait until next season, you'll miss it.
                 </p>
+                
+                {/* YouTube Video */}
+                <div className="max-w-2xl mx-auto mt-8">
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                      src="https://www.youtube.com/embed/7bym1zien6Q"
+                      title="Investment Video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Champions Newsletter */}
