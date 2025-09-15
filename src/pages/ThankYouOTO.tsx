@@ -84,7 +84,7 @@ const ThankYouOTO = () => {
                   <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                     <iframe
                       className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                      src="https://www.youtube.com/embed/7bym1zien6Q"
+                      src="https://www.youtube.com/embed/7bym1zien6Q?controls=1&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
                       title="Investment Video"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
