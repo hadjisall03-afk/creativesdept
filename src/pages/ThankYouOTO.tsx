@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Clock, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ThankYouOTO = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div 
       className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
