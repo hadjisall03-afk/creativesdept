@@ -73,7 +73,7 @@ const TradingLandingPage = () => {
             
             <h1 className="text-3xl sm:text-4xl font-black leading-tight text-slate-900 drop-shadow-sm">
               <span className="text-slate-900 font-extrabold">
-                7 NFL Stocks About To
+                7 NFL Stocks
               </span>
               <br />
               <span className="text-slate-900">Ready to</span>{" "}
